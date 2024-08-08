@@ -1,6 +1,5 @@
 ---
 app: postgres-initdb
-base: false
 channels:
   - name: stable
     platforms:
