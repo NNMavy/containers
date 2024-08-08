@@ -1,0 +1,4 @@
+---
+file:
+  /usr/bin/tinyproxy:
+    exists: true
