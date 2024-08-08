@@ -28,8 +28,6 @@ ARG CHANNEL
 # Copy our static executable
 COPY --from=builder /go/bin/alertmanager-discord /go/bin/alertmanager-discord
 
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
-
 #hadolint ignore=DL3018
 RUN \
   apk add --no-cache \
