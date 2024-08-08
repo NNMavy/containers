@@ -49,6 +49,12 @@ RUN \
     && chmod -R 755 /app/qbittorrent-nox \
     && rm -rf /tmp/*
 
+RUN \
+    curl -fsSL "https://github.com/wdaan/vuetorrent/releases/download/v1.0.1/vuetorrent.zip" > "/tmp/vuetorrent.zip" && \
+    unzip "/tmp/vuetorrent.zip" -d "/app" && \
+    rm "/tmp/vuetorrent.zip" && \
+    chmod -R u=rwX,go=rX "/app/vuetorrent"
+
 COPY ./apps/qbittorrent/scripts/config.py /scripts/config.py
 COPY ./apps/qbittorrent/entrypoint.sh /entrypoint.sh
 
