@@ -38,7 +38,8 @@ RUN \
 
 #hadolint ignore=DL3018
 RUN \
-  curl -o /app/config.yaml https://raw.githubusercontent.com/masgustavos/alertmanager-discord/main/config.example.yaml
+  curl -o /tmp/config.yaml https://raw.githubusercontent.com/masgustavos/alertmanager-discord/main/config.example.yaml \
+  && cp /tmp/config.yaml /app/config.yaml
 
 USER nobody:nogroup
 ENV LISTEN_ADDRESS=0.0.0.0:8080
