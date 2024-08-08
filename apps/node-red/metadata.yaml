@@ -1,5 +1,5 @@
 ---
-app: alertmanager-discord
+app: node-red
 channels:
   - name: stable
     platforms:
