@@ -34,9 +34,11 @@ RUN \
   bash \
   ca-certificates \
   catatonit \
-  curl \
-  && touch /app/config.yaml \
-  && curl -o /app/config.yaml https://raw.githubusercontent.com/masgustavos/alertmanager-discord/main/config.example.yaml
+  curl
+
+#hadolint ignore=DL3018
+RUN \
+  curl -o /app/config.yaml https://raw.githubusercontent.com/masgustavos/alertmanager-discord/main/config.example.yaml
 
 USER nobody:nogroup
 ENV LISTEN_ADDRESS=0.0.0.0:8080
