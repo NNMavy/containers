@@ -107,6 +107,7 @@ RUN apt-get update &&  \
             software-properties-common \
             git \
             wget \
+            catatonit \
             curl \
             unzip \
             trash-cli && \
