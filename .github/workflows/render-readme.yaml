@@ -17,6 +17,10 @@ jobs:
     name: Render README
     runs-on: ubuntu-latest
     steps:
+      - name: Lowercase repository owner
+        shell: bash
+        run: echo "LOWERCASE_REPO_OWNER=${GITHUB_REPOSITORY_OWNER,,}" >> $GITHUB_ENV
+        
       - name: Generate Token
         uses: actions/create-github-app-token@v1
         id: app-token
