@@ -112,7 +112,7 @@ RUN chown -R nobody:nogroup /app \
 
 USER nobody:nogroup
 
-COPY ./apps/tdarr_node/entrypoint.sh /entrypoint.sh
+COPY ./apps/tdarr/entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/usr/bin/catatonit", "--"]
 CMD ["/entrypoint.sh"]
