@@ -10,6 +10,7 @@
   ],
   "dependencyDashboardTitle": "Renovate Dashboard 🤖",
   "suppressNotifications": ["prEditedNotification", "prIgnoreNotification"],
+  "includeForks": true,
   "packageRules": [
     {
       "addLabels": ["renovate/container", "type/major"],
