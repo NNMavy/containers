@@ -7,8 +7,6 @@ to edit this file, instead edit its template at: ./github/scripts/templates/READ
 
 ## Containers
 
-This has been hard forked from the upstream: https://github.com/onedr0p/containers
-
 _An opinionated collection of container images_
 
 </div>
@@ -21,7 +19,7 @@ _An opinionated collection of container images_
 
 </div>
 
-Welcome to my container images, if looking for a container start by [browsing the GitHub Packages page for this repo's packages](https://github.com/onedr0p?tab=packages&repo_name=containers).
+Welcome to my container images, if looking for a container start by [browsing the GitHub Packages page for this repo's packages](https://github.com/nnmavy?tab=packages&repo_name=containers).
 
 ## Mission statement
 
@@ -110,32 +108,8 @@ Each Image will be built with a `rolling` tag, along with tags specific to it's 
 
 Container | Channel | Image
 --- | --- | ---
-[actions-runner](https://github.com/nnmavy/containers/pkgs/container/actions-runner) | stable | ghcr.io/nnmavy/actions-runner
-[bazarr](https://github.com/nnmavy/containers/pkgs/container/bazarr) | stable | ghcr.io/nnmavy/bazarr
-[home-assistant](https://github.com/nnmavy/containers/pkgs/container/home-assistant) | stable | ghcr.io/nnmavy/home-assistant
-[jbops](https://github.com/nnmavy/containers/pkgs/container/jbops) | stable | ghcr.io/nnmavy/jbops
-[lidarr](https://github.com/nnmavy/containers/pkgs/container/lidarr) | master | ghcr.io/nnmavy/lidarr
-[lidarr-develop](https://github.com/nnmavy/containers/pkgs/container/lidarr-develop) | develop | ghcr.io/nnmavy/lidarr-develop
-[lidarr-nightly](https://github.com/nnmavy/containers/pkgs/container/lidarr-nightly) | nightly | ghcr.io/nnmavy/lidarr-nightly
-[par2cmdline-turbo](https://github.com/nnmavy/containers/pkgs/container/par2cmdline-turbo) | stable | ghcr.io/nnmavy/par2cmdline-turbo
-[plex](https://github.com/nnmavy/containers/pkgs/container/plex) | stable | ghcr.io/nnmavy/plex
-[plex-beta](https://github.com/nnmavy/containers/pkgs/container/plex-beta) | beta | ghcr.io/nnmavy/plex-beta
-[postgres-init](https://github.com/nnmavy/containers/pkgs/container/postgres-init) | stable | ghcr.io/nnmavy/postgres-init
-[prowlarr](https://github.com/nnmavy/containers/pkgs/container/prowlarr) | master | ghcr.io/nnmavy/prowlarr
-[prowlarr-develop](https://github.com/nnmavy/containers/pkgs/container/prowlarr-develop) | develop | ghcr.io/nnmavy/prowlarr-develop
-[prowlarr-nightly](https://github.com/nnmavy/containers/pkgs/container/prowlarr-nightly) | nightly | ghcr.io/nnmavy/prowlarr-nightly
-[qbittorrent](https://github.com/nnmavy/containers/pkgs/container/qbittorrent) | stable | ghcr.io/nnmavy/qbittorrent
-[qbittorrent-beta](https://github.com/nnmavy/containers/pkgs/container/qbittorrent-beta) | beta | ghcr.io/nnmavy/qbittorrent-beta
-[radarr](https://github.com/nnmavy/containers/pkgs/container/radarr) | master | ghcr.io/nnmavy/radarr
-[radarr-develop](https://github.com/nnmavy/containers/pkgs/container/radarr-develop) | develop | ghcr.io/nnmavy/radarr-develop
-[radarr-nightly](https://github.com/nnmavy/containers/pkgs/container/radarr-nightly) | nightly | ghcr.io/nnmavy/radarr-nightly
-[readarr-develop](https://github.com/nnmavy/containers/pkgs/container/readarr-develop) | develop | ghcr.io/nnmavy/readarr-develop
-[readarr-nightly](https://github.com/nnmavy/containers/pkgs/container/readarr-nightly) | nightly | ghcr.io/nnmavy/readarr-nightly
-[sabnzbd](https://github.com/nnmavy/containers/pkgs/container/sabnzbd) | stable | ghcr.io/nnmavy/sabnzbd
-[sonarr](https://github.com/nnmavy/containers/pkgs/container/sonarr) | main | ghcr.io/nnmavy/sonarr
-[sonarr-develop](https://github.com/nnmavy/containers/pkgs/container/sonarr-develop) | develop | ghcr.io/nnmavy/sonarr-develop
-[theme-park](https://github.com/nnmavy/containers/pkgs/container/theme-park) | stable | ghcr.io/nnmavy/theme-park
-[volsync](https://github.com/nnmavy/containers/pkgs/container/volsync) | stable | ghcr.io/nnmavy/volsync
+[qbittorrent](https://github.com/NNMavy/containers/pkgs/container/qbittorrent) | stable | ghcr.io/NNMavy/qbittorrent
+[qbittorrent-beta](https://github.com/NNMavy/containers/pkgs/container/qbittorrent-beta) | beta | ghcr.io/NNMavy/qbittorrent-beta
 
 
 ## Deprecations
