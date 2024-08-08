@@ -108,8 +108,8 @@ Each Image will be built with a `rolling` tag, along with tags specific to it's 
 
 Container | Channel | Image
 --- | --- | ---
-[qbittorrent](https://github.com/NNMavy/containers/pkgs/container/qbittorrent) | stable | ghcr.io/NNMavy/qbittorrent
-[qbittorrent-beta](https://github.com/NNMavy/containers/pkgs/container/qbittorrent-beta) | beta | ghcr.io/NNMavy/qbittorrent-beta
+[qbittorrent](https://github.com/NNMavy/containers/pkgs/container/qbittorrent) | stable | ghcr.io/nnmavy/qbittorrent
+[qbittorrent-beta](https://github.com/NNMavy/containers/pkgs/container/qbittorrent-beta) | beta | ghcr.io/nnmavy/qbittorrent-beta
 
 
 ## Deprecations
