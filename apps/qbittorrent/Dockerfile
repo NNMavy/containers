@@ -50,7 +50,7 @@ RUN \
     && rm -rf /tmp/*
 
 RUN \
-    curl -fsSL "https://github.com/wdaan/vuetorrent/releases/download/v1.0.1/vuetorrent.zip" > "/tmp/vuetorrent.zip" && \
+    curl -fsSL "https://github.com/wdaan/vuetorrent/releases/download/v2.11.1/vuetorrent.zip" > "/tmp/vuetorrent.zip" && \
     unzip "/tmp/vuetorrent.zip" -d "/app" && \
     rm "/tmp/vuetorrent.zip" && \
     chmod -R u=rwX,go=rX "/app/vuetorrent"
