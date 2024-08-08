@@ -34,6 +34,7 @@ RUN \
   bash \
   ca-certificates \
   catatonit \
+  curl \
   && curl -o /app/config.yaml https://raw.githubusercontent.com/masgustavos/alertmanager-discord/main/config.example.yaml
 
 USER nobody:nogroup
