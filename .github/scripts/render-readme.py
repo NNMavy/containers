@@ -5,7 +5,7 @@ import yaml
 
 from jinja2 import Environment, PackageLoader, select_autoescape
 
-repo_owner = os.environ.get('REPO_OWNER', os.environ.get('GITHUB_REPOSITORY_OWNER'))
+repo_owner = os.environ.get('REPO_OWNER', os.environ.get('LOWERCASE_REPO_OWNER'))
 repo_name = os.environ.get('REPO_NAME', os.environ.get('GITHUB_REPOSITORY'))
 
 env = Environment(
