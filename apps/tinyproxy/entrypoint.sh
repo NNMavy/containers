@@ -18,8 +18,8 @@ TP_CONF="/etc/tinyproxy/tinyproxy.conf"
 if [[ ! -f $TP_CONF ]]
  then
 	cat > $TP_CONF <<EOF
-User kah
-Group kah
+User nobody
+Group nogroup
 Port $LISTEN_PORT
 Syslog $LOG_TO_SYSLOG
 LogLevel $LOG_LEVEL
