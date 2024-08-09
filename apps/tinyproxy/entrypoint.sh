@@ -42,6 +42,4 @@ for p in $CONNECT_PORTS
 done
 fi
 
-chown -R kah:kah /var/log/tinyproxy
-
 exec /usr/bin/tinyproxy -c /etc/tinyproxy/tinyproxy.conf -d 2>&1
