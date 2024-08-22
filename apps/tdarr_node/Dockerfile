@@ -111,6 +111,9 @@ RUN apt-get update &&  \
             curl \
             unzip \
             trash-cli && \
+        # HandBrake deps
+        apt-get install -y \
+            libass9 && \
     mkdir -p \
     /app \
     /logs \
