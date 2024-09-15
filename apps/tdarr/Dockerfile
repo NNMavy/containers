@@ -54,7 +54,7 @@ RUN apt-get update &&  \
 RUN apt-get update \
     # FFmpeg 6 and deps
     && ffmpegversion=$(curl --silent https://api.github.com/repos/jellyfin/jellyfin-ffmpeg/releases/latest | grep -oP '"tag_name":\s*"v\K[^"]+' | sort -h | tail -n1) \
-    && wget https://github.com/jellyfin/jellyfin-ffmpeg/releases/download/v$ffmpegversion/jellyfin-ffmpeg6_$ffmpegversion-noble_amd64.deb \
+    && wget https://github.com/jellyfin/jellyfin-ffmpeg/releases/download/v$ffmpegversion/jellyfin-ffmpeg7_$ffmpegversion-noble_amd64.deb \
     && apt install -y \
         ./jellyfin-ffmpeg6_$ffmpegversion-noble_amd64.deb \
     && rm -rf ./jellyfin-ffmpeg6_$ffmpegversion-noble_amd64.deb \ 
