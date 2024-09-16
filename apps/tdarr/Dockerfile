@@ -54,10 +54,10 @@ RUN apt-get update &&  \
 RUN apt-get update \
     # FFmpeg 6 and deps
     && ffmpegversion=$(curl --silent https://api.github.com/repos/jellyfin/jellyfin-ffmpeg/releases/latest | grep -oP '"tag_name":\s*"v\K[^"]+' | sort -h | tail -n1) \
-    && wget https://github.com/jellyfin/jellyfin-ffmpeg/releases/download/v$ffmpegversion/jellyfin-ffmpeg6_$ffmpegversion-noble_amd64.deb \
+    && wget https://github.com/jellyfin/jellyfin-ffmpeg/releases/download/v$ffmpegversion/jellyfin-ffmpeg7_$ffmpegversion-noble_amd64.deb \
     && apt install -y \
-        ./jellyfin-ffmpeg6_$ffmpegversion-noble_amd64.deb \
-    && rm -rf ./jellyfin-ffmpeg6_$ffmpegversion-noble_amd64.deb \ 
+        ./jellyfin-ffmpeg7_$ffmpegversion-noble_amd64.deb \
+    && rm -rf ./jellyfin-ffmpeg7_$ffmpegversion-noble_amd64.deb \ 
     && ln -s /usr/lib/jellyfin-ffmpeg/ffmpeg /usr/local/bin/ffmpeg \
     && ln -s /usr/lib/jellyfin-ffmpeg/ffprobe /usr/local/bin/ffprobe
 
@@ -103,7 +103,6 @@ RUN echo $MODULE && echo $VERSION && echo $DATE && \
            runTests=true runDockerTests=true /app_test/Tdarr_Node/Tdarr_Node ; \
     fi && \
     rm -rdf /app_test && \
-
     trash-empty && \
     apt-get autoremove -y
 
