@@ -103,7 +103,6 @@ RUN echo $MODULE && echo $VERSION && echo $DATE && \
            runTests=true runDockerTests=true /app_test/Tdarr_Node/Tdarr_Node ; \
     fi && \
     rm -rdf /app_test && \
-
     trash-empty && \
     apt-get autoremove -y
 
