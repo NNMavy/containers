@@ -111,12 +111,10 @@ Each Image will be built with a `rolling` tag, along with tags specific to it's 
 Container | Channel | Image
 --- | --- | ---
 [node-red](https://github.com/NNMavy/containers/pkgs/container/node-red) | stable | ghcr.io/nnmavy/node-red
-[postgres-initdb](https://github.com/NNMavy/containers/pkgs/container/postgres-initdb) | stable | ghcr.io/nnmavy/postgres-initdb
 [qbittorrent](https://github.com/NNMavy/containers/pkgs/container/qbittorrent) | stable | ghcr.io/nnmavy/qbittorrent
 [qbittorrent-beta](https://github.com/NNMavy/containers/pkgs/container/qbittorrent-beta) | beta | ghcr.io/nnmavy/qbittorrent-beta
 [tdarr](https://github.com/NNMavy/containers/pkgs/container/tdarr) | stable | ghcr.io/nnmavy/tdarr
 [tdarr_node](https://github.com/NNMavy/containers/pkgs/container/tdarr_node) | stable | ghcr.io/nnmavy/tdarr_node
-[tinyproxy](https://github.com/NNMavy/containers/pkgs/container/tinyproxy) | stable | ghcr.io/nnmavy/tinyproxy
 
 
 ## Deprecations
