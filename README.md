@@ -110,7 +110,6 @@ Each Image will be built with a `rolling` tag, along with tags specific to it's 
 
 Container | Channel | Image
 --- | --- | ---
-[home-assistant](https://github.com/NNMavy/containers/pkgs/container/home-assistant) | stable | ghcr.io/nnmavy/home-assistant
 [node-red](https://github.com/NNMavy/containers/pkgs/container/node-red) | stable | ghcr.io/nnmavy/node-red
 [qbittorrent](https://github.com/NNMavy/containers/pkgs/container/qbittorrent) | stable | ghcr.io/nnmavy/qbittorrent
 [qbittorrent-beta](https://github.com/NNMavy/containers/pkgs/container/qbittorrent-beta) | beta | ghcr.io/nnmavy/qbittorrent-beta
