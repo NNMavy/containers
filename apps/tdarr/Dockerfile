@@ -105,11 +105,19 @@ RUN echo $MODULE && echo $VERSION && echo $DATE && \
     rm -rdf /app_test && \
     trash-empty && \
     apt-get autoremove -y
-
-RUN chown -R nobody:nogroup /app \
+# Add apps user and configure permissions
+RUN \
+    adduser apps \
+        --uid 568 \
+        --group \
+        --system \
+        --disabled-password \
+        --no-create-home
+        
+RUN chown -R apps:apps /app \
     && chmod a+rwx -R /app/Tdarr_Node/assets/app/ffmpeg/
 
-USER nobody:nogroup
+USER apps
 
 COPY ./apps/tdarr/entrypoint.sh /entrypoint.sh
 
